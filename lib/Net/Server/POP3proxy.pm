@@ -654,14 +654,14 @@ __END__
 
 =head1 NAME
 
-Net::POP3proxy - POP3 Proxy class for working with virus scanners and anti-spam software
+Net::Server::POP3proxy - POP3 Proxy class for working with virus scanners and anti-spam software
 
 =head1 SYNOPSIS
 
-    use Net::POP3proxy;
+    use Net::Server::POP3proxy;
 
     # Constructors
-    $popproxy = new Net::POP3proxy(
+    $popproxy = new Net::Server::POP3proxy(
         Action => sub { filterAction ($_[0]); },
         Error  => sub { die ($_[0]); },
         Debug  => sub { print STDERR ($_[0]); }
